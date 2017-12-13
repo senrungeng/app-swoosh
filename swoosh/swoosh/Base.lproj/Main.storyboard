@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,26 +20,52 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sanhuabackground" translatesAutoresizingMaskIntoConstraints="NO" id="IcS-AZ-stt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanhuabackground" translatesAutoresizingMaskIntoConstraints="NO" id="IcS-AZ-stt">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EXV" translatesAutoresizingMaskIntoConstraints="NO" id="OCS-LN-WAf">
-                                <rect key="frame" x="77" y="180" width="233" height="307"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVs-PO-6rD" customClass="BorderBUtton" customModule="swoosh" customModuleProvider="target">
-                                <rect key="frame" x="45" y="578" width="285" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVs-PO-6rD" customClass="BorderBUtton" customModule="swoosh" customModuleProvider="target">
+                                <rect key="frame" x="45" y="589" width="285" height="46"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                 <state key="normal" title="INTRODUCTION">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLa-Zt-Gpm">
+                                <rect key="frame" x="111" y="57" width="153" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronic Expansion Valve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRf-7w-sCh">
+                                <rect key="frame" x="42" y="131" width="290" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EXV" translatesAutoresizingMaskIntoConstraints="NO" id="OCS-LN-WAf">
+                                <rect key="frame" x="37.5" y="153.5" width="300" height="360"/>
+                            </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="IcS-AZ-stt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="10E-cF-N3t"/>
+                            <constraint firstItem="RLa-Zt-Gpm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="2Nf-uC-uYC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RLa-Zt-Gpm" secondAttribute="trailing" constant="111" id="9FE-Vq-ahB"/>
+                            <constraint firstItem="IcS-AZ-stt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="D1b-mS-2c3"/>
+                            <constraint firstItem="OCS-LN-WAf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EKL-H5-kG8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pVs-PO-6rD" secondAttribute="trailing" constant="45" id="LnN-x3-TjZ"/>
+                            <constraint firstItem="GRf-7w-sCh" firstAttribute="top" secondItem="RLa-Zt-Gpm" secondAttribute="bottom" constant="20" id="MVe-2h-SdG"/>
+                            <constraint firstItem="pVs-PO-6rD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="XQL-9h-Rh5"/>
+                            <constraint firstItem="IcS-AZ-stt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZFU-RU-UDr"/>
+                            <constraint firstItem="RLa-Zt-Gpm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="cPW-td-RNJ"/>
+                            <constraint firstItem="IcS-AZ-stt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ezJ-qm-avu"/>
+                            <constraint firstItem="OCS-LN-WAf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m3W-ug-a8d"/>
+                            <constraint firstItem="GRf-7w-sCh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="mWO-Bd-YUz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GRf-7w-sCh" secondAttribute="trailing" constant="43" id="ojr-8d-vsB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pVs-PO-6rD" secondAttribute="bottom" constant="32" id="wzo-eE-gYa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>

@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Background.alpha = 0.2
-        Background.frame = view.frame
+        Background.alpha = 0.45
+        
     }
 
     override func didReceiveMemoryWarning() {
