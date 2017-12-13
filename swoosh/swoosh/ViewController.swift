@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Background: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Background.alpha = 0.2
+        Background.frame = view.frame
     }
 
     override func didReceiveMemoryWarning() {
