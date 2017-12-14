@@ -105,6 +105,10 @@
                                     <segue destination="K9D-GP-CJC" kind="unwind" unwindAction="unwindFromIntroductionWithUnwind:" id="rPr-2q-6tA"/>
                                 </connections>
                             </button>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" playing="YES" jitteringEnabled="YES" allowsCameraControl="YES" wantsMultisampling="YES" autoenablesDefaultLighting="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbd-Eb-EKN">
+                                <rect key="frame" x="49" y="138" width="276" height="391"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </sceneKitView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -119,6 +123,7 @@
                     </view>
                     <connections>
                         <outlet property="IntroBackground" destination="N5T-zd-2WC" id="2DB-og-aag"/>
+                        <outlet property="boxview" destination="lbd-Eb-EKN" id="7Zi-8g-vJ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihs-PF-2lA" userLabel="First Responder" sceneMemberID="firstResponder"/>
