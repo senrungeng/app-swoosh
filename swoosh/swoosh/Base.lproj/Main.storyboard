@@ -15,40 +15,44 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Main Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanhuabackground" translatesAutoresizingMaskIntoConstraints="NO" id="IcS-AZ-stt">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVs-PO-6rD" customClass="BorderBUtton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="45" y="589" width="285" height="46"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                 <state key="normal" title="INTRODUCTION">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="y8d-pl-9rX" kind="show" id="Wfw-T0-Jua"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLa-Zt-Gpm">
                                 <rect key="frame" x="111" y="57" width="153" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronic Expansion Valve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRf-7w-sCh">
-                                <rect key="frame" x="42" y="131" width="290" height="26.5"/>
+                                <rect key="frame" x="42" y="121" width="290" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EXV" translatesAutoresizingMaskIntoConstraints="NO" id="OCS-LN-WAf">
                                 <rect key="frame" x="37.5" y="153.5" width="300" height="360"/>
                             </imageView>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IcS-AZ-stt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="10E-cF-N3t"/>
                             <constraint firstItem="RLa-Zt-Gpm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="2Nf-uC-uYC"/>
@@ -56,7 +60,7 @@
                             <constraint firstItem="IcS-AZ-stt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="D1b-mS-2c3"/>
                             <constraint firstItem="OCS-LN-WAf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EKL-H5-kG8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pVs-PO-6rD" secondAttribute="trailing" constant="45" id="LnN-x3-TjZ"/>
-                            <constraint firstItem="GRf-7w-sCh" firstAttribute="top" secondItem="RLa-Zt-Gpm" secondAttribute="bottom" constant="20" id="MVe-2h-SdG"/>
+                            <constraint firstItem="GRf-7w-sCh" firstAttribute="top" secondItem="RLa-Zt-Gpm" secondAttribute="bottom" constant="10" id="MVe-2h-SdG"/>
                             <constraint firstItem="pVs-PO-6rD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="XQL-9h-Rh5"/>
                             <constraint firstItem="IcS-AZ-stt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZFU-RU-UDr"/>
                             <constraint firstItem="RLa-Zt-Gpm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="cPW-td-RNJ"/>
@@ -74,7 +78,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="118.29085457271366"/>
+            <point key="canvasLocation" x="-276" y="117"/>
+        </scene>
+        <!--Introduction Page View Controller-->
+        <scene sceneID="ZzR-rT-eMs">
+            <objects>
+                <viewController id="y8d-pl-9rX" customClass="IntroductionPageViewController" customModule="swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vpd-Wn-1CQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanhuabackground" translatesAutoresizingMaskIntoConstraints="NO" id="N5T-zd-2WC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcQ-IZ-bW5" customClass="BorderBUtton" customModule="swoosh" customModuleProvider="target">
+                                <rect key="frame" x="20" y="30" width="94" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="SY8-f0-Wpd"/>
+                                    <constraint firstAttribute="height" constant="51" id="tuG-ZL-LdI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="K9D-GP-CJC" kind="unwind" unwindAction="unwindFromIntroductionWithUnwind:" id="rPr-2q-6tA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lcQ-IZ-bW5" firstAttribute="leading" secondItem="qOy-Th-k68" secondAttribute="leading" constant="20" id="7h5-qN-dPk"/>
+                            <constraint firstItem="N5T-zd-2WC" firstAttribute="bottom" secondItem="qOy-Th-k68" secondAttribute="bottom" id="JU2-hg-hZF"/>
+                            <constraint firstItem="N5T-zd-2WC" firstAttribute="top" secondItem="Vpd-Wn-1CQ" secondAttribute="top" id="TCA-u2-C3P"/>
+                            <constraint firstItem="lcQ-IZ-bW5" firstAttribute="top" secondItem="qOy-Th-k68" secondAttribute="top" constant="10" id="hZ7-BZ-40N"/>
+                            <constraint firstItem="N5T-zd-2WC" firstAttribute="leading" secondItem="qOy-Th-k68" secondAttribute="leading" id="nm6-Y0-pLl"/>
+                            <constraint firstItem="N5T-zd-2WC" firstAttribute="trailing" secondItem="qOy-Th-k68" secondAttribute="trailing" id="qPd-Wm-2Br"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qOy-Th-k68"/>
+                    </view>
+                    <connections>
+                        <outlet property="IntroBackground" destination="N5T-zd-2WC" id="2DB-og-aag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ihs-PF-2lA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="K9D-GP-CJC" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="744.79999999999995" y="117.39130434782609"/>
         </scene>
     </scenes>
     <resources>

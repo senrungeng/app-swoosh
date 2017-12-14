@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainScreenViewController: UIViewController {
 
     @IBOutlet weak var Background: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Background.alpha = 0.45
+        Background.alpha = 0.2
         
     }
 
@@ -23,6 +23,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func unwindFromIntroduction(unwind: UIStoryboardSegue){
+        
+    }
 
 }
 
