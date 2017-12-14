@@ -27,7 +27,7 @@ class IntroductionPageViewController: UIViewController {
         let scene = SCNScene()
         
         // 2
-        let boxGeometry = SCNBox(width: 2, height: 2, length: 2, chamferRadius: 0.2)
+        let boxGeometry = SCNBox(width: 5, height: 5, length:5, chamferRadius: 0.2)
         let boxNode = SCNNode(geometry: boxGeometry)
         scene.rootNode.addChildNode(boxNode)
         
